@@ -264,7 +264,7 @@ for i=1,2 do
     if (table.getn(ids) > 0) then
         for _, id in ipairs(ids) do
             local bytes = redis.call("MEMORY", "USAGE", ARGV[1] .. id)
-            if type(bytes)!="boolean" then
+            if type(bytes)~="boolean" then
 				sample_total = sample_total + bytes
 			end
         end
@@ -283,7 +283,7 @@ for i=3,6 do
     if (table.getn(ids) > 0) then
         for _, id in ipairs(ids) do
             local bytes = redis.call("MEMORY", "USAGE", ARGV[1] .. id)
-            if type(bytes)!="boolean" then
+            if type(bytes)~="boolean" then
 				sample_total = sample_total + bytes
 			end
         end
