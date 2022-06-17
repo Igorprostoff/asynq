@@ -119,7 +119,7 @@ func TaskKey(qname, id string) string {
 
 // PendingKey returns a redis key for the given queue name.
 func PendingKey(qname string) string {
-	return fmt.Sprintf("%s", QueueKeyPrefix(qname))[:len(fmt.Sprintf("%s", QueueKeyPrefix(qname)))-2]
+	return fmt.Sprintf("%s", QueueKeyPrefix(qname))[len(fmt.Sprintf("%s", QueueKeyPrefix(qname)))-2:]
 }
 
 // ActiveKey returns a redis key for the active tasks.
