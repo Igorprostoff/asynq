@@ -9,10 +9,10 @@ import (
 	"io"
 	"os"
 
+	"github.com/Igorprostoff/asynq/internal/errors"
 	"github.com/MakeNowJust/heredoc/v2"
-	"github.com/fatih/color"
-	"github.com/hibiken/asynq"
-	"github.com/hibiken/asynq/internal/errors"
+	"github.com/Igorprostoff/asynq
+	"github.com/Igorprostoff/asynq"
 	"github.com/spf13/cobra"
 )
 
