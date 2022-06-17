@@ -13,7 +13,7 @@ import (
 
 	"github.com/Igorprostoff/asynq/internal/base"
 	h "github.com/Igorprostoff/asynq/internal/testutil"
-	"github.com/Igorprostoff/asynqasynq/internal/rdb"
+	"github.com/Igorprostoff/asynq/internal/rdb"
 )
 
 func TestSyncer(t *testing.T) {
